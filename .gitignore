@@ -1,3 +1,6 @@
+# Prerequisites
+*.d
+
 # Compiled Object files
 *.slo
 *.lo
@@ -15,6 +18,7 @@
 
 # Fortran module files
 *.mod
+*.smod
 
 # Compiled Static libraries
 *.lai
@@ -27,35 +31,20 @@
 *.out
 *.app
 
-# CMake
-CMakeCache.txt
-CMakeFiles
-cmake_install.cmake
-install_manifest.txt
-*.cmake
-!glmConfig.cmake
-!glmConfig-version.cmake
-# ^ May need to add future .cmake files as exceptions
+# IDE
+.idea/
+.vs/
 
-# Test logs
-Testing/*
-
-# Test input
-test/gtc/*.dds
-
-# Project Files
-Makefile
-*.cbp
+# Solution Files
+*.vcxproj
+*.filters
 *.user
+*.sln
 
-# Misc.
-*.log
+# Testing
+Testing/
 
-# local build(s)
-build*
-
-/.vs
-/.vscode
-/CMakeSettings.json
-.DS_Store
-*.swp
+# Build
+Build/
+bin/
+obj/
