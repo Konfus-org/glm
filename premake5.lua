@@ -4,13 +4,18 @@ project "glm"
     cppdialect "C++17"
     staticruntime "off"
 
+    flags
+    {
+        "MultiProcessorCompile"
+    }
+
     if OutputIntermediateDir == nil or OutputTargetDir == nil then
         targetdir ("Build/bin/%{prj.name}/")
         objdir    ("Build/obj/%{prj.name}/")
 
     else
-        targetdir ("../../../" .. OutputTargetDir .. "")
-        objdir    ("../../../" .. OutputIntermediateDir .. "")
+        targetdir ("../../" .. OutputTargetDir .. "")
+        objdir    ("../../" .. OutputIntermediateDir .. "")
     end
 
     defines
