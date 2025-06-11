@@ -9,8 +9,7 @@ project "glm"
         "glm/**.hpp",
         "glm/**.inl",
         "glm/glm.cpp",
-        "./**.md",
-        "./**.lua"
+        "./**.md"
     }
     includedirs
     {
