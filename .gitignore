@@ -65,3 +65,4 @@ Makefile
 *.recipe
 *.cmake
 *.pc
+*.dir
